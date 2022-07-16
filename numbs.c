@@ -30,7 +30,11 @@ char *convert(long int num, int base, int flags, params_t *params)
 	do	{
 		*--ptr = array[n % base];
 		n /= base;
+<<<<<<< HEAD
 	} while (n != 0);
+=======
+	}  while (n != 0);
+>>>>>>> cf0d7a5005e46e3f3114de78202bfc635844c249
 
 	if (sign)
 		*--ptr = sign;
@@ -59,7 +63,10 @@ int print_unsigned(va_list ap, params_t *params)
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> cf0d7a5005e46e3f3114de78202bfc635844c249
 /**
  * print_address - prints address
  * @ap: argument pointer
@@ -80,3 +87,7 @@ int print_address(va_list ap, params_t *params)
 	*--str = '0';
 	return (print_number(str, params));
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> cf0d7a5005e46e3f3114de78202bfc635844c249
